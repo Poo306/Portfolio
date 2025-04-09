@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #d0ff00;
+    border-radius: 20px;
+    color: #000;
+}
+
+main {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #031a06e9;
+    margin-bottom: 15px;
+    border-left: 5px solid #3a9610;
+    padding-left: 10px;
+}
+
+section p, section li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li, #projects li {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #3a9610;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+#skills li:hover, #projects li:hover {
+    background-color: #2d7c08;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
