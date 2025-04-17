@@ -9,6 +9,8 @@
 body {
     background-color: #f4f4f4;
     color: #333;
+    font-size: 16px; /* Better base font size */
+    line-height: 1.6;
 }
 
 header {
@@ -22,22 +24,26 @@ header {
     justify-content: center;
     text-align: center;
     position: relative;
-
+}
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
+    max-width: 90%;  /* Allow better responsiveness */
+    margin: 0 auto;
 }
 
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Slight shadow for readability */
 }
 
 header p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 nav a {
@@ -47,6 +53,7 @@ nav a {
     font-size: 1.1rem;
     padding: 8px 15px;
     border: 2px solid transparent;
+    border-radius: 5px; /* Slight rounded corners */
     transition: 0.3s;
 }
 
@@ -54,6 +61,10 @@ nav a:hover {
     background-color: #d0ff00;
     border-radius: 20px;
     color: #000;
+}
+
+nav a:focus {
+    outline: 2px solid #d0ff00; /* Focus styles for accessibility */
 }
 
 main {
@@ -92,6 +103,7 @@ ul {
     color: white;
     border-radius: 20px;
     transition: background-color 0.3s;
+    cursor: pointer; /* Indicates interactivity */
 }
 
 #skills li:hover, #projects li:hover {
@@ -103,4 +115,43 @@ footer {
     padding: 20px;
     background-color: #222;
     color: white;
+    font-size: 1rem; /* Slightly smaller text for footer */
+    border-top: 1px solid #444; /* Subtle border to distinguish footer */
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Adjust header font size for smaller screens */
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem; /* Adjust font size of links */
+    }
+
+    main {
+        padding: 40px 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce heading size for mobile */
+    }
+
+    #skills li, #projects li {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem; /* Smaller header for very small screens */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Smaller font for mobile devices */
+    }
 }
